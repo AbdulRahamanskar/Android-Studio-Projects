@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user"
+            android:layout_margin="10dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:text="Abdul Rahaman"
+                android:textSize="20sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="1dp"
+                android:id="@+id/tvName"/>
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:text="This is the last message was here"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:id="@+id/tVLastMsg"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:00 PM"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="italic"
+            android:layout_gravity="end"
+
+            android:gravity="end"
+            android:id="@+id/tVLastMsgTime"/>
+    </LinearLayout>
+
+</LinearLayout>
